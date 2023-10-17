@@ -1,0 +1,42 @@
+@media only screen and (max-width:1030px){
+    /* feature Product  */
+    .row{
+        flex-wrap: wrap;
+    }
+    nav{
+        /* flex-direction: column; */
+
+    }
+    /* Navigation  */
+    header ul{
+        flex-direction: column;
+        background-color: black;
+        position: absolute;
+        top: 50px;
+        right: 5px;
+    }
+    header ul li{
+        margin: 20px;
+        padding: 20px;
+    }
+    header ul li a{
+        color: white;
+    }
+    ul li a:before{
+        border: none;
+    }
+    ul li a:after{
+        border: none;
+    }
+    .menu-icon div{
+        display: block;
+    }
+    /* feature categories  */
+    .col{
+        margin: 10px;
+    }
+    /* Offer Section  */
+    .img-box{
+        height: 300px;
+    }
+}
