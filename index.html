@@ -17,13 +17,13 @@
             <img src="IMAGE/logo-removebg-preview.png" alt="">
         </div>
         <nav>
-            <ul>
+            <ul class="ul">
                 <li><a href="">Home</a></li>
                 <li><a href="">Products</a></li>
                 <li><a href="">About</a></li>
                 <li><a href="">Contact us</a></li>
             </ul>
-            <div class="menu-icon">
+            <div class="menu-icon" onclick="menu()">
                 <div></div>
                 <div></div>
                 <div></div>
@@ -252,6 +252,7 @@
             <img src="IMAGE/logo-removebg-preview.png" alt="">
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis dignissimos </p>
             </div>
+            <div class="col-3and4">
             <div class="footer-col-3">
             <h3>Useful Links</h3>
             <ul>
@@ -270,13 +271,17 @@
                     <li>YouTube</li>
                 </ul>
                 </div>
+            </div>
         </div>
         <hr>
         <p class="copyright">copyright &copy;2023 All Right Reserved</p>
     </footer>
     <script>
         let result = document.getElementsByClassName("text")[0].innerText;
-        console.log(result)
+        function menu(){
+            let menu = document.querySelector(".ul");
+            menu.classList.toggle("enable")
+        }
     </script>
 </body>
 </html>

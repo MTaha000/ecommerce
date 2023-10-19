@@ -82,6 +82,9 @@ ul li a:hover::after{
 nav{
     display: flex;
 }
+.enable{
+    display: flex !important;
+}
 /* Home */
 .home{
     display: flex;
@@ -161,9 +164,7 @@ nav{
 .btn:hover{
     background-color: rgba(222, 228, 222, 0.76);
 }
-.btn a:hover{
-    /* color: white; */
-}
+
 
 /* feature categories */
 .small-container{
@@ -192,9 +193,7 @@ nav{
 .rating i{
     color: rgb(55, 133, 163);
 }
-.row{
-    
-}
+
 .title{
     text-align: center;
     
@@ -316,9 +315,7 @@ margin: 0px 0px;
     margin: 0px 10px;
     
 }
-.footer-col-1{
-    /* margin-left:30px; */
-}
+
 .footer-col-2{
     text-align: center;
 }
