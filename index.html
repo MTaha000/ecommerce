@@ -11,17 +11,17 @@
     <link rel="stylesheet" href="CSS/responsive.css">
 </head>
 <body>
-    <div class="background">
-    <header class="container">
+   
+    <header class="navbar">
         <div class="logo">
             <img src="IMAGE/logo-removebg-preview.png" alt="">
         </div>
         <nav>
             <ul class="ul">
-                <li><a href="">Home</a></li>
-                <li><a href="">Products</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Contact us</a></li>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">Offers</a></li>
+                <li><a href="#contact">Contact us</a></li>
             </ul>
             <div class="menu-icon" onclick="menu()">
                 <div></div>
@@ -30,7 +30,7 @@
                </div>
             </nav>
     </header>
-    <div class="home">
+    <div class="home" id="Home">
         <div class="text">
             <h1>New Collection</h1>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi, dolore fugiat pariatur molestias illum
@@ -39,7 +39,7 @@
             <button class="btn"><a href="">Learn More</a></button>
         </div>
     </div>
-</div>
+
 <!-- feature categories -->
 <div class="small-container">
 <div class="row">
@@ -55,7 +55,7 @@
 </div>
 </div>
 <!-- feature products -->
-<div class="small-container">
+<div class="small-container" id="products">
     <h2 class="title">Feature Products</h2>
     <div class="line"></div>
     <div class="row">
@@ -215,7 +215,7 @@
         </div>
     </div>
     <!-- offer -->
-    <div class="offer">
+    <div class="offer" id="about">
         <div class="small-container">
             <div class="offer-box">
             <div class="img-box">
@@ -238,7 +238,7 @@
             <div class="col-3"><img src="IMAGE/whatsapp-removebg-preview.png" alt=""></div>
         </div>
     </div>
-    <footer>
+    <footer id="contact">
         <div class="f-container">
             <div class="footer-col-1">
             <h3>Download Our App</h3>
@@ -282,6 +282,16 @@
             let menu = document.querySelector(".ul");
             menu.classList.toggle("enable")
         }
+        let navBar = document.querySelector(".navbar")
+        
+        window.onscroll = ()=>{
+            if(document.documentElement.scrollTop > 20){
+                navBar.classList.add("scroll")
+            }
+            else{
+                navBar.classList.remove("scroll")
+            }
+        }        
     </script>
 </body>
 </html>

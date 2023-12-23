@@ -6,22 +6,20 @@
 header{
     display: flex;
     justify-content: space-between;
-    /* background: url('../IMAGE/pexels-andrea-piacquadio-845434.jpg'); */
-    /* background-size: cover;
-    background-position:top; */
-    /* height: 100px; */
+    align-items: center;
     width: 100%;
-    /* position: sticky; */
 }
-
+.navbar{
+    position: fixed;
+}
 .logo{
     margin: 0px 20px;
 }
 .logo img{
     /* border: 5px solid blue; */
     /* border-radius: 00px; */
-    width: 250px;
-    height: 100px;
+    width: 200px;
+    height: 80px;
     /* padding: 30px; */
     /* border: 5px solid black; */
     /* border-radius: 50px; */
@@ -37,40 +35,18 @@ header ul li{
 ul li a{
     text-decoration: none;
     padding: 8px 30px;
-    color: black;
+    color: white;
+    background-color: black;
     font-size: 2.2vmin;
     font-weight: 900;
     position: relative;
+    transition: 0.5s ease-in-out;
     /* color: white; */
 }
-ul li a::before{
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    transition: all 0.5s;
-    box-sizing: border-box;
-    border-top: 2px solid black;
-    border-left: 2px solid black;
-}
-ul li a::after{
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    bottom: 0%;
-    right: 0%;
-    transition: all 0.5s;
-    box-sizing: border-box;
-    border-bottom: 2px solid black;
-    border-right: 2px solid black;
-}
-ul li a:hover::before,
-ul li a:hover::after{
-    width: 10%;
-    height: 30%;
+
+ul li a:hover{
+   background-color: white;
+    color: black;
 }
 .menu-icon div{
     width: 50px;
@@ -85,21 +61,26 @@ nav{
 .enable{
     display: flex !important;
 }
+.scroll{
+    background:linear-gradient(100deg, rgb(119, 214, 226),rgb(100, 131, 136));
+    color: white !important;
+}
+
 /* Home */
 .home{
     display: flex;
     /* margin: 50px; */
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     /* background-image: url('../IMAGE/pexels-andrea-piacquadio-845434.jpg'); */
     background-size: cover;
     background-position: center;
 }
-.background::before{
+.home::before{
     content: "";
     position: absolute;
     width: 100%;
-    height: 80%;
+    height: 100%;
     background: url('../IMAGE/pexels-andrea-piacquadio-845434.jpg');
     background-size: cover;
     background-position: center;
